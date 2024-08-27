@@ -1,10 +1,10 @@
-# Desafio de Criptografia de Textos
+# Desafio de Criptografia de Textos 🔐
 
-### Introdução
+### Introdução 💻
 
 Este projeto foi desenvolvido para o primeiro desafio, onde criei uma aplicação que criptografa textos. Com esta aplicação, é possível trocar mensagens secretas com outras pessoas que conheçam o segredo da criptografia utilizada.
 
-### Chaves de Criptografia
+### Chaves de Criptografia 🔑
 
 As “chaves” de criptografia utilizadas são:
 
@@ -14,28 +14,28 @@ As “chaves” de criptografia utilizadas são:
 - A letra “o” é convertida para “ober”
 - A letra “u” é convertida para “ufat”
 
-### Requisitos Atendidos
+### Requisitos Atendidos 🚨
 
 - Funciona apenas com letras minúsculas.
 - Não utiliza letras com acentos nem caracteres especiais.
 - Converte uma palavra para a versão criptografada e também retorna uma palavra criptografada para a versão original.
 
-### Exemplos
+### Exemplos 📲
 
 - “gato” => “gaitober”
 - “gaitober” => “gato”
 
-### Funcionalidades Implementadas
+### Funcionalidades Implementadas 🔨
 
 - A página possui campos para inserção do texto a ser criptografado ou descriptografado.
 - A pessoa usuária pode escolher entre as duas opções.
 - O resultado é exibido na tela.
 
-### Extras
+### Extras ➕
 
 - Adicionei um botão que copia o texto criptografado/descriptografado para a área de transferência, com a mesma funcionalidade do ctrl+C ou da opção “copiar” do menu dos aplicativos.
 
-### Metodologia de Desenvolvimento
+### Metodologia de Desenvolvimento 👩‍💻
 
 O projeto foi desenvolvido em um período de quatro semanas, utilizando o sistema ágil de desenvolvimento com Trello da seguinte forma:
 
@@ -45,3 +45,7 @@ O projeto foi desenvolvido em um período de quatro semanas, utilizando o sistem
 - Concluído: Elementos já concluídos.
 
 O Trello foi utilizado como uma ferramenta individual para controlar o andamento das atividades.
+
+### Deploy 🔗
+
+Este projeto foi publicado em um dominio da Vercel e pode ser acessado clicando [aqui](https://decodificadorchallenge-giovanna-sumaiyahs-projects.vercel.app/)
