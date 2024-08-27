@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #000;
+}
+
+html,
+body {
+  background-color: #f3f5fc;
+  margin: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  box-sizing: border-box;
+  flex: 1;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.container__titulo {
+  margin-top: 15px;
+}
+
+.container__titulo_img {
+  width: 120px;
+  height: 50px;
+  margin-inline: 50px;
+}
+
+.container__conteudo {
+  display: flex;
+  padding-inline: 70px;
+  align-items: center;
+}
+
+.container__secao__esquerda,
+.container__secao__direita {
+  flex: 1;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.container__secao__esquerda {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container__secao__direita {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* esquerda secao */
+
+textarea {
+  height: 65vh;
+  padding: 30px 30px 30px 80px;
+  background-color: #f3f5fc;
+  font-size: large;
+  border-style: none;
+  outline: none;
+  resize: none;
+  transition: 0.3s;
+}
+
+textarea:focus {
+  font-size: x-large;
+}
+
+.alert__minusculo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container__botoes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container__botao_criptografar,
+.container__botao_decriptografar,
+.container__botao_copiar {
+  width: 250px;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 15px;
+  font-weight: bold;
+  transition: 0.3s;
+  font-size: medium;
+}
+
+.container__botao_criptografar {
+  background-color: #ffffff;
+  border: 1px solid #3855b4;
+  color: #416eff;
+}
+
+.container__botao_criptografar:hover {
+  background-color: #3e67ec;
+  color: #ffffff;
+}
+
+.container__botao_criptografar:active {
+  background-color: #3855b4;
+}
+
+.container__botao_decriptografar {
+  border: 1px solid #5e798f;
+  background-color: #ffffff;
+  color: #5e798f;
+}
+
+.container__botao_decriptografar:hover {
+  background-color: #5e798f;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+
+.container__botao_decriptografar:active {
+  background-color: #425564;
+}
+
+/* direita secao */
+
+.container__card {
+  width: 50vh;
+  height: 80vh;
+  text-align: center;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 20px 1px rgba(0, 0, 0, 0.5);
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+/*Mensagem criptografada*/
+
+.container__card_secao__saida {
+  display: none;
+  padding: 55px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container__mensagem_criptografada {
+  font-family: "Inter", sans-serif;
+}
+
+.container__botao_saida {
+  display: flex;
+  justify-content: center;
+}
+
+.container__botao_copiar {
+  background-color: #ffffff;
+  border: 1px solid #3855b4;
+  color: #416eff;
+}
+
+.container__botao_copiar:hover {
+  background-color: #3e67ec;
+  color: #ffffff;
+}
+
+.container__botao_copiar:active {
+  background-color: #3855b4;
+}
+
+/*Sem mensagem criptografada*/
+
+.container__card_secao__vazio {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container__card_secao__img {
+  box-sizing: border-box;
+  margin-bottom: 50px;
+}
+
+.container__card_secao__vazio__texto {
+  font-family: "Inter", sans-serif;
+}
+.container__card_secao__vazio__texto h3 {
+  font-size: 22px;
+  width: 250px;
+  color: #343a40;
+  margin-bottom: 10px;
+}
+
+.container__card_secao__vazio__texto div {
+  display: flex;
+  justify-content: center;
+}
+
+.container__card_secao__vazio__texto p {
+  width: 300px;
+  font-size: 14px;
+  color: #495057;
+}
+
+/*Footer*/
+
+footer {
+  background-color: #f3f5fc;
+  text-align: center;
+  padding: 10px;
+}
+.creditos {
+  display: flex;
+  flex-direction: row;
+  gap: 0.3rem;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+}
+
+.feitopor {
+  background-color: transparent;
+  text-decoration: none;
+  color: white;
+}
+
+.idiotmoose {
+  background-color: transparent;
+  text-decoration: none;
+  color: hwb(240 35% 10%);
+}
+
+.githublogo {
+  height: 2rem;
+  width: 2rem;
+}
+
+@media (max-width: 880px) {
+  .container__conteudo {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .container__secao__esquerda {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    border-radius: 5px;
+    position: relative;
+  }
+
+  textarea {
+    width: 100%;
+    height: 30vh;
+    font-size: medium;
+  }
+
+  .container__secao__direita {
+    width: 70%;
+    padding: 10px;
+    margin: 10px;
+  }
+}

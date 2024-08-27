@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/Frame 5.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Codificador de texto</title>
+  </head>
+  <body>
+    <main>
+      <div class="container__titulo">
+        <img
+          class="container__titulo_img"
+          src="/img/Frame 6.png"
+          alt="Logo da Alura"
+        />
+      </div>
+      <div class="container__conteudo">
+        <div class="container__secao__esquerda">
+          <textarea placeholder="Digite seu texto"></textarea>
+          <div class="alert__minusculo">
+            <img
+              src="/img/Frame 1.png"
+              alt="Apenas letras minúsculas e sem acento."
+            />
+          </div>
+          <div class="container__botoes">
+            <button onclick="criptografar()" class="container__botao_criptografar">
+              Criptografar
+            </button>
+            <button
+              onclick="descriptografar()"
+              class="container__botao_decriptografar"
+            >
+              Descriptografar
+            </button>
+          </div>
+        </div>
+        <div class="container__secao__direita">
+          <div class="container__card">
+            <div class="container__card_secao__saida">
+              <div class="container__mensagem_criptografada">
+                <h3 class="mensagem_saida"></h3>
+              </div>
+              <div class="container__botao_saida">
+                <button onclick="copiarTextoSaida()" class="container__botao_copiar">
+                  Copiar
+                </button>
+              </div>
+            </div>
+            <div class="container__card_secao__vazio">
+              <div class="container__card_secao__img">
+                <img
+                  src="img/homem-lupa.png"
+                  id="homem-lupa"
+                  alt="pessoa segurando uma lupa para olhar um diamente"
+                />
+              </div>
+              <div class="container__card_secao__vazio__texto">
+                <div>
+                  <h3>Nenhuma mensagem encontrada</h3>
+                </div>
+                <div>
+                  <p>
+                    Digite um texto que você deseja criptografar ou descriptografar.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="creditos">
+      <h6 class="feitoPor">Feito Por</h6>
+      <img src="img/github.png" class="githublogo" alt="GitHub Logo" />
+      <a href="https://github.com/idiotmoose" class="idiotmoose">/idiotmoose</a>
+    </footer>
+    <script src="script.js" defer></script>
+  </body>
+</html>
